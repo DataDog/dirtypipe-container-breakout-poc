@@ -14,7 +14,7 @@ EOF
 Vagrant.configure("2") do |config|
   boxes = {
     'ubuntu-21.04'     => {
-      'image'          => 'ubuntu/hirsute64',
+      'image'          => 'ubuntu/impish64',
       'scripts'        => [ $ubuntu_deps, ],
       'fix_console'    => 0,
     }
