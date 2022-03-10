@@ -22,4 +22,4 @@ $ docker run -it ubuntu:latest
 ```
 
 ## Screenshots
-![image](https://user-images.githubusercontent.com/85519958/157522451-6b26a3a2-950c-4350-aa37-35987b7d4199.png)
+![image](https://user-images.githubusercontent.com/85519958/157739931-fa30b757-e275-4749-a82b-fb806f651299.png)
