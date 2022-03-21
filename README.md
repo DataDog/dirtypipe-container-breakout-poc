@@ -38,6 +38,10 @@ uid=0(root) gid=0(root) groups=0(root)
 pool-stbjbwsjv-cn15e
 ```
 
+## Notes
+
+This proof-of-concept requires the malicious script to run as root. Breaking out from a container using an underprivileged user is left as an exercise to the reader, who is highly encouraged to contribute back to this repository. :-) 
+
 ## Credits
 
 - Dirty Pipe original PoC: Max Kellermann (https://dirtypipe.cm4all.com/)
