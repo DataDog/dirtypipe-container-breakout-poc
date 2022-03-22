@@ -38,6 +38,12 @@ uid=0(root) gid=0(root) groups=0(root)
 pool-stbjbwsjv-cn15e
 ```
 
+## Notes
+
+This proof-of-concept requires the malicious script to run as root, in order to overwrite /bin/sh (or any binary that has a high chance of being executed through kubectl exec) with the necessary contents (`#!/proc/self/exe`). Note that we cannot use Dirty Pipe itself to overwrite a binary with this string, as Dirty Pipe doesn’t allow to overwrite the first byte of the target file. The first byte of a binary executable would remain 0x7f, the first magic byte of an ELF binary.
+
+Breaking out from a container using an underprivileged user is left as an exercise to the reader, who is highly encouraged to contribute back to this repository. :-) 
+
 ## Credits
 
 - Dirty Pipe original PoC: Max Kellermann (https://dirtypipe.cm4all.com/)
