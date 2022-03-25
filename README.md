@@ -1,5 +1,7 @@
 # Dirty Pipe Container Escape
 
+**Write-up: [Using the Dirty Pipe Vulnerability to Break Out from Containers](https://www.datadoghq.com/blog/engineering/dirty-pipe-container-escape-poc/)**
+
 This repository contains a proof of concept exploit leveraging the Dirty Pipe vulnerability (CVE-2022-0847) to break out from an underprivileged container.
 
 Tested on a Kernel 5.10.0-0 with runc 1.0.2 on Kubernetes 1.22.7, but should work on any vulnerable kernel.
